@@ -20,7 +20,7 @@ export default function Sobre() {
             data-aos-duration='1200'
             className='titulo'
           >
-            (Dr). Raphael Rodrigues Dos Santos.
+            Dr. Raphael Rodrigues Dos Santos.
           </h1>
           <section>
             <img
