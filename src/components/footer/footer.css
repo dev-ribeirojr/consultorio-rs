@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+.footer section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #1A5CB0;
+}
+.footer section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #1A5CB0;
+}
+.footer section a:hover {
+  color: #D7BC65;
+}
+.footer .borda-secao {
+  background: linear-gradient(to left, #082A54, #1A5CB0);
+  height: 1.6rem;
+  width: 100%;
+  box-shadow: 0 0 10px #D7BC65;
+  margin: 3rem 0 1rem 0;
+  border-top: 2px solid #D7BC65;
+  border-bottom: 2px solid #D7BC65;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.footer .borda-footer {
+  height: 30px;
+  background-color: #D7BC65;
+}
+
+@media (min-width: 768px) {
+  .footer section {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

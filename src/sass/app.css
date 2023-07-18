@@ -9,4 +9,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /*# sourceMappingURL=app.css.map */

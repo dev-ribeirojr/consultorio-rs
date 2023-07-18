@@ -9,3 +9,11 @@
   box-sizing: border-box;
   font-family: $font-roboto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

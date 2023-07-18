@@ -1,0 +1,46 @@
+@import '../../sass/variaveis.scss';
+@import '../../sass/mixins.scss';
+
+.footer {
+    section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: $cor-secundaria;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: $cor-secundaria;
+
+            &:hover {
+                color: $cor-terciaria;
+            }
+        }
+    }
+
+    .borda-secao {
+        @include bordaSecao;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .borda-footer {
+        height: 30px;
+        background-color: $cor-terciaria;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        section {
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    }
+}

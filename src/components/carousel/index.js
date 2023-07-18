@@ -8,6 +8,10 @@ import ImagenQuatro from '../../assets/img/dente-tratamento.jpg';
 import ImagenCinco from '../../assets/img/dente-tratamento-2.jpg';
 import ImagenSeis from '../../assets/img/dente-curado.jpg';
 
+import ImagenSete from '../../assets/img/antes-depois.jpeg';
+import ImagenOito from '../../assets/img/processo.jpeg';
+import ImagenNove from '../../assets/img/processo-2.jpeg';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -25,6 +29,9 @@ export default function Carousel() {
         { id: 4, src: ImagenQuatro },
         { id: 5, src: ImagenCinco },
         { id: 6, src: ImagenSeis },
+        { id: 7, src: ImagenSete },
+        { id: 8, src: ImagenOito },
+        { id: 9, src: ImagenNove },
     ]
     return (
         <section

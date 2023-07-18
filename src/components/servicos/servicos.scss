@@ -1,0 +1,80 @@
+@import '../../sass/variaveis.scss';
+@import '../../sass/mixins.scss';
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .area-cards-servicos {
+        width: 100%;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+
+        &:hover> :not(:hover) {
+            opacity: .5;
+            transform: scale(0.9);
+        }
+
+        .card-servico {
+            border: 1px solid $cor-terciaria;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px $cor-terciaria;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.6rem;
+
+            text-align: center;
+            padding: 1.6rem;
+            transition: all 0.35s;
+
+            &:hover {
+                div {
+                    background-color: $cor-primaria;
+                }
+            }
+
+            div {
+                background-color: $cor-secundaria;
+                box-shadow: 0 0 10px $cor-terciaria;
+                border-radius: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 1.2rem;
+
+                img {
+                    max-width: 50px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            p {
+                color: $cor-primaria;
+
+            }
+        }
+    }
+
+    .borda-secao {
+        @include bordaSecao;
+    }
+}
+
+@media (min-width: 768px) {
+    #servicos {
+        .area-cards-servicos {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import '../../sass/variaveis.scss';
+@import '../../sass/mixins.scss';
+
+#formacao {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .area-formacao {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 900px;
+
+        section {
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            &.area-img {
+                border: 1px solid $cor-terciaria;
+                border-radius: 0.5rem;
+                padding: 1rem 1rem 0 1rem;
+                box-shadow: 0 0 10px $cor-terciaria;
+                max-width: 220px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 90%;
+                }
+            }
+
+            &.area-texto {
+                margin-top: 1.6rem;
+
+                h1 {
+                    text-align: center;
+                    font-size: $font-size-titulo;
+                    color: $cor-primaria;
+                    text-shadow: 0 0 5px $cor-terciaria;
+                }
+
+                p {
+                    max-width: 400px;
+                    text-align: justify;
+                    margin-top: 1rem;
+                    color: $cor-primaria;
+                }
+            }
+        }
+    }
+
+    .borda-secao {
+        @include bordaSecao;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #formacao {
+        .area-formacao {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    }
+}
