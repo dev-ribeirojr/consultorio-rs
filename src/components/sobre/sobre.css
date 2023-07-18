@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+#sobre {
+  background: linear-gradient(to left, #082A54, #1A5CB0);
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  box-shadow: 0 10px 10px #D7BC65;
+}
+#sobre .sobre {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+#sobre .sobre .area-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#sobre .sobre .area-texto .titulo {
+  margin: 1rem 0;
+  max-width: 350px;
+  font-size: 1.9rem;
+  color: #D7BC65;
+  text-shadow: 0 0 10px #082A54;
+  font-family: "Merriweather", serif;
+}
+#sobre .sobre .area-texto section {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+#sobre .sobre .area-texto section img {
+  width: 2rem;
+}
+#sobre .sobre .area-texto section p {
+  margin-left: 1rem;
+  max-width: 400px;
+  text-align: justify;
+}
+#sobre .sobre .area-texto .area-contato {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+#sobre .sobre .area-texto .area-contato section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #FFF;
+}
+#sobre .sobre .area-texto .area-contato section svg {
+  color: #D7BC65;
+  font-size: 1.5rem;
+}
+#sobre .sobre .area-texto .area-contato section a {
+  color: #FFF;
+}
+#sobre .sobre .area-texto .area-contato section a svg {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+  color: #FFF;
+  transition: 0.1s;
+}
+#sobre .sobre .area-texto .area-contato section a:hover {
+  color: #D7BC65;
+}
+#sobre .sobre .area-texto .area-contato section a:hover svg {
+  color: #D7BC65;
+}
+#sobre .sobre .area-imagens-dr {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #sobre .sobre {
+    padding-right: 0;
+  }
+  #sobre .sobre .area-texto .titulo {
+    font-size: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  #sobre .sobre .area-texto section img {
+    width: 3rem;
+  }
+  #sobre .sobre .area-texto section p {
+    max-width: 450px;
+  }
+  #sobre .sobre .area-texto .area-contato {
+    flex-direction: row;
+    align-self: self-end;
+  }
+  #sobre .sobre .area-imagens-dr {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=sobre.css.map */
