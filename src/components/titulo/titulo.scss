@@ -5,11 +5,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
     max-width: 600px;
 
     margin: 2rem 0;
+
+    .content-titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        padding: 0.2rem 0;
+    }
 
     .titulo {
         display: flex;
