@@ -1,0 +1,141 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variaveis.scss';
+
+.header-principal {
+  @include gradiente(to left, $cor-primaria, $cor-secundaria);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.8rem 0 0.5rem 0;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  z-index: 999;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+
+    .logo {
+      border-radius: 50%;
+      width: 40px;
+    }
+
+    .icone-menu {
+      height: 2.2rem;
+      cursor: pointer;
+    }
+
+    .navegar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      position: absolute;
+      top: 90px;
+      right: 40px;
+
+      border-radius: 1rem;
+      border-top-right-radius: 0;
+      box-shadow: 0 0 5px $cor-terciaria;
+      padding: 1rem;
+
+      .icone-msg {
+        @include gradiente(to top, $cor-primaria, $cor-secundaria);
+        height: 30px;
+        width: 30px;
+        clip-path: polygon(100% 1%, 0% 100%, 100% 100%);
+        position: absolute;
+        top: -29px;
+        right: 0;
+      }
+
+      a {
+        padding: 0.2rem 0.8rem 0.2rem 0.2rem;
+        width: 100%;
+        text-align: end;
+        font-size: 1.2rem;
+        color: $cor-branca;
+        border-right: 1px solid $cor-branca;
+        margin-bottom: 4px;
+
+        &:hover {
+          color: $cor-terciaria;
+          border-color: $cor-terciaria;
+        }
+      }
+    }
+  }
+
+  .header-bordas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    section {
+      width: 50%;
+
+      div {
+        box-shadow: 0 3px 2px $cor-primaria;
+        height: 1px;
+        background-color: $cor-branca;
+        margin-top: 8px;
+
+        &.primeira-borda {
+          width: 70%;
+        }
+
+        &.segunda-borda {
+          width: 50%;
+        }
+      }
+
+      &.right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-principal {
+    .header {
+      .navegar {
+        @include gradiente(to left, $cor-primaria, $cor-secundaria);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-principal {
+    .header {
+      .navegar {
+        position: static;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+
+        box-shadow: none;
+        background-color: none;
+
+        a {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .icone-menu {
+    display: none;
+  }
+}
