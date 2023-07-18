@@ -1,0 +1,37 @@
+@import '../../sass/variaveis.scss';
+
+
+.carousel {
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem 0;
+    display: none;
+
+    .swiper {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        box-shadow: 0 0 10px $cor-terciaria;
+        margin: 10px 0;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        display: block;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../sass/variaveis.scss';
+@import '../../sass/mixins.scss';
+
+#agendamento {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 50px;
+
+  .logo {
+    margin: 1rem;
+  }
+
+  .area-horario {
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+
+    p {
+      color: $cor-primaria;
+      padding-left: 1rem;
+    }
+
+    .borda {
+      height: 1px;
+      width: 80%;
+      max-width: 400px;
+      background-color: $cor-secundaria;
+      box-shadow: 0 2px 2px $cor-primaria;
+      margin: 1rem 0;
+    }
+  }
+
+  a {
+    width: 200px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $cor-terciaria;
+    color: $cor-branca;
+    border-radius: 0.2rem;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    box-shadow: 10px 10px 5px $cor-primaria;
+    transition: .35s;
+
+    &:hover {
+      background-color: $cor-primaria;
+      box-shadow: 10px 10px 5px $cor-terciaria;
+    }
+  }
+
+  .borda-secao {
+    @include bordaSecao;
+  }
+}
+
+@media (min-width: 768px) {
+  #agendamento {
+
+    .area-horario {
+      max-width: 890px;
+    }
+  }
+}

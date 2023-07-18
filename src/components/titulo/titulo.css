@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+.area-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem 0;
+}
+.area-titulo .titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.area-titulo .titulo svg {
+  color: #082A54;
+}
+.area-titulo .titulo h1 {
+  font-size: 1.9rem;
+  margin: 1.6rem 1rem;
+  text-shadow: 0 2px 4px #D7BC65;
+  color: #082A54;
+}
+.area-titulo div {
+  height: 1px;
+  width: 50%;
+  background-color: #1A5CB0;
+  max-width: 260px;
+  box-shadow: 0 2px 2px #082A54;
+}
+.area-titulo div.border-left {
+  align-self: flex-start;
+}
+.area-titulo div.border-right {
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .area-titulo {
+    max-width: 900px;
+  }
+  .area-titulo .titulo h1 {
+    font-size: 2.5rem;
+  }
+  .area-titulo div {
+    width: 60%;
+    max-width: 900px;
+  }
+}
+
+/*# sourceMappingURL=titulo.css.map */

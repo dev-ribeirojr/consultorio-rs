@@ -1,3 +1,14 @@
 @mixin gradiente($direction, $primeiraCor, $segundaCor) {
   background: linear-gradient($direction, $primeiraCor, $segundaCor);
 }
+
+@mixin bordaSecao() {
+  @include gradiente(to left, $cor-primaria, $cor-secundaria);
+  height: 1.6rem;
+  width: 100%;
+  box-shadow: 0 0 10px $cor-terciaria;
+
+  margin: 3rem 0 1rem 0;
+  border-top: 2px solid $cor-terciaria;
+  border-bottom: 2px solid $cor-terciaria;
+}

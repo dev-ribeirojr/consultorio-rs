@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+.carousel {
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem 0;
+  display: none;
+}
+.carousel .swiper {
+  width: 100%;
+  margin: 2rem 0;
+}
+.carousel .swiper-slide {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px #D7BC65;
+  margin: 10px 0;
+}
+.carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=carousel.css.map */

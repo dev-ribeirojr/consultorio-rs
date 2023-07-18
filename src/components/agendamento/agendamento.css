@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+#agendamento {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+#agendamento .logo {
+  margin: 1rem;
+}
+#agendamento .area-horario {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+#agendamento .area-horario p {
+  color: #082A54;
+  padding-left: 1rem;
+}
+#agendamento .area-horario .borda {
+  height: 1px;
+  width: 80%;
+  max-width: 400px;
+  background-color: #1A5CB0;
+  box-shadow: 0 2px 2px #082A54;
+  margin: 1rem 0;
+}
+#agendamento a {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D7BC65;
+  color: #FFF;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 10px 10px 5px #082A54;
+  transition: 0.35s;
+}
+#agendamento a:hover {
+  background-color: #082A54;
+  box-shadow: 10px 10px 5px #D7BC65;
+}
+#agendamento .borda-secao {
+  background: linear-gradient(to left, #082A54, #1A5CB0);
+  height: 1.6rem;
+  width: 100%;
+  box-shadow: 0 0 10px #D7BC65;
+  margin: 3rem 0 1rem 0;
+  border-top: 2px solid #D7BC65;
+  border-bottom: 2px solid #D7BC65;
+}
+
+@media (min-width: 768px) {
+  #agendamento .area-horario {
+    max-width: 890px;
+  }
+}
+
+/*# sourceMappingURL=agendamento.css.map */
